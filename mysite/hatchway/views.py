@@ -18,7 +18,7 @@ def ping(request):
 
     return HttpResponseServerError("CRUD operation is not supported",
                                    status=400)
-
+# A cache with a 15 minute timeout.
 @cache_page(60 * 15)
 def posts(request):
     if request.method == "GET":

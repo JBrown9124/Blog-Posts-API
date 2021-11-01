@@ -7,9 +7,10 @@ from typing import List, Dict
 client = Client()
 class ViewsTestCase(TestCase):
     
-    def test_get_ping(self):
+    def test_ping(self):
         response = client.get('/api/ping')
         self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json(), {"success":True})
     
     def test_direction_invalid_query_argument(self):
         response = client.get('/api/posts?tags=history,tech&direction=ascending&sortBy=likes')
