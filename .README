@@ -1,0 +1,8 @@
+Hello and thank you for this opportunity.
+
+How to start application:
+
+1. Activate my .venv
+
+2. The "mysite" parent directory contains a python file called "manage.py". Access the 
+parent directory "mysite" in your terminal then run the command "python manage.py runserver"
