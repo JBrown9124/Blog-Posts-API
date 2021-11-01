@@ -3,8 +3,7 @@
 
                                                   How to start application:
 
-    1. Activate my .venv located in the root folder of my application or install the packages I used into your virtual environment.
-    If you go to the requirements.txt file in my root folder you will see all the packages that are required for this application to run.
+    1. Type $ pip install -r requirements.txt in your terminal then press then "enter" key. This will install the required packages for this application to run.
 
     2. The "mysite" outer-parent directory contains a python file called "manage.py" that starts the application. Access this 
     outer-parent directory with your terminal. Then type the command $ python manage.py runserver and press the "enter" key. 
@@ -23,5 +22,10 @@
 
     install command: $ pip install -r requirements.txt
 
+    posts_provider_test_case command: $ python manage.py test hatchway.Tests.posts_provider_test_case
+    views_test_case command: $ python manage.py test hatchway.Tests.views_test_case
+
     language: Python(Django)
+
+    
 
